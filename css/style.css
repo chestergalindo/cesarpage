@@ -1,0 +1,245 @@
+/*azul oscuro 084670;
+azul claro 2388CC
+negro CF2523
+rojo E94A24
+gris 1F1E05
+amarillo EBE905
+
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+aling-itmes:center;
+
+aling-self;
+*/
+
+body{
+    margin: 0;
+    background: white;
+}
+
+.logo{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+}
+
+.header {
+    background-color: #0B517F;
+    color: white;
+    margin: 0;
+    /* margin-top: 20px; */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+menu {
+    height: inherit;
+}
+
+.header ol{
+    height: inherit;
+    display: flex;
+    align-content: center;
+}
+
+.header ol li{
+    height: inherit;
+    padding: 15px 10px;
+}
+
+.header a{
+    color: white;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: capitalize;
+    height: inherit;
+    font-weight: bold;
+}
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    height: inherit;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -.8px;
+    text-transform: capitalize;
+    font-family: 'Quattrocento Sans', sans-serif;
+    margin: 0;
+}
+
+.hero{
+    height: 270px;
+    /* background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: -150px; */
+    background-color: #2388CC;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: space-around;
+}
+
+.hero h1 {
+    color: white;
+}
+
+/*.hero strong{
+    color #822423;
+    font-weight: bold;
+}*/
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+h3{
+    margin: 8px 0px;
+    color: #2388CC;
+    font-size: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+p {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 14px;
+}
+
+h2{
+    padding-left: 10px;
+    color: #E94A24;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.destacados{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.manual img,
+.tiempos img,
+.negociacion img{
+    padding-right: 20px;
+}
+
+.img-manual,
+.img-tiempos,
+.img-negociacion {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.manual,
+.tiempos,
+.negociacion {
+    border: 1px solid #2388CC;
+    box-shadow: 2px 2px 10px #888888;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    width: 27%;
+    height: 220px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.trabajemos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    margin: 0px 10px;
+}
+
+.boton{
+background: #2388CC;
+color: white;
+border-style: solid;
+padding: 5px 0;
+border-radius: 5px;
+width: 50px;
+}
+
+.correo {
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    background-image: url(https://img.icons8.com/color/48/000000/open-envelope.png);
+    background-size: 20px;
+    background-repeat: no-repeat;    
+    background-position-y: center;
+    padding: 5px 30px;
+    background-position-x: 5px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.social-link.instagram {
+    background-image: url(https://img.icons8.com/ultraviolet/40/000000/instagram.png);
+}
+
+.social-link.linkedin {
+    background-image: url(https://img.icons8.com/color/48/000000/linkedin.png);
+}
+
+.social-link.github {
+    background-image: url(https://img.icons8.com/color/48/000000/github.png);
+}
+
+footer {
+    background-color: #0B517F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Quattrocento Sans', sans-serif;
+    height: 40px;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
