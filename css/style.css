@@ -151,9 +151,14 @@ h2{
     padding-right: 20px;
 }
 
-.img-manual,
-.img-tiempos,
-.img-negociacion {
+.proyectos-title{
+    display: flex;
+    justify-content: center;
+}
+
+.manual-img,
+.tiempos-img,
+.negociacion-img {
     display: flex;
     justify-content: center;
     margin: 10px 0px;
