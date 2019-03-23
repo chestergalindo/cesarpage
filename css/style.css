@@ -160,10 +160,15 @@ h2{
 }
 
 .trabajemos {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
     margin-bottom: 20px;
+}
+
+.form-social{
+    display: flex;
+    align-items: center
 }
 
 .formulario{
@@ -178,6 +183,13 @@ padding: 5px 0;
 border-radius: 5px;
 width: 50px;
 }
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 .correo {
     border-color: gray;
