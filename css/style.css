@@ -24,15 +24,6 @@ body{
     align-items: center;
 }
 
-.container{
-    /* border: 1px solid red; */
-    width: 1000px;
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    height: inherit;
-}
 
 .header {
     background-color: #0B517F;
@@ -45,18 +36,7 @@ body{
 
 }
 
-menu {
-    height: inherit;
-}
-
-.header ol{
-    height: inherit;
-    display: flex;
-    align-content: center;
-}
-
 .header ol li{
-    height: inherit;
     padding: 15px 10px;
 }
 
