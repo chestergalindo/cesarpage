@@ -18,45 +18,36 @@ body{
     background: white;
 }
 
-.logo{
-    margin: 0;
-    display: flex;
+.conta{
+    display: grid;
+    grid-template-rows: 50px 265px 340px 100px 40px;
+    justify-content: center;
     align-items: center;
-}
-
-.container{
-    /* border: 1px solid red; */
-    width: 1000px;
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    height: inherit;
+    height: 100vh;
+    grid-template-areas:    "header"
+                            "hero"
+                            "proyectos"
+                            "trabajemos"
+                            "footer";
 }
 
 .header {
     background-color: #0B517F;
     color: white;
     margin: 0;
-    /* margin-top: 20px; */
     height: 50px;
     display: flex;
     justify-content: space-between;
-
+    grid-area: header;
 }
 
-menu {
-    height: inherit;
-}
-
-.header ol{
-    height: inherit;
+.logo{
+    margin: 0;
     display: flex;
-    align-content: center;
+    align-items: center;
 }
 
 .header ol li{
-    height: inherit;
     padding: 15px 10px;
 }
 
@@ -87,16 +78,13 @@ h1 {
 }
 
 .hero{
-    height: 270px;
-    /* background-image: url("../images/hero.jpg");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: -150px; */
+    height: 265px;
     background-color: #2388CC;
     display: flex;
     align-items: center;
     padding: 0 15px;
-    justify-content: space-around;
+    justify-content: space-between;
+    grid-area: hero;
 }
 
 .hero h1 {
@@ -132,6 +120,10 @@ p {
     font-size: 14px;
 }
 
+.proyectos{
+    grid-area: proyectos;
+}
+
 h2{
     padding-left: 10px;
     color: #E94A24;
@@ -151,9 +143,14 @@ h2{
     padding-right: 20px;
 }
 
-.img-manual,
-.img-tiempos,
-.img-negociacion {
+.proyectos-title{
+    display: flex;
+    justify-content: center;
+}
+
+.manual-img,
+.tiempos-img,
+.negociacion-img {
     display: flex;
     justify-content: center;
     margin: 10px 0px;
@@ -168,30 +165,39 @@ h2{
     margin: 10px;
     padding: 10px 20px;
     width: 27%;
-    height: 220px;
+    height: 230px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
 }
 
 .trabajemos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     margin-bottom: 20px;
+    grid-area: trabajemos;
 }
+
+.trabajemos-title{
+    display: grid;
+    justify-content: center;
+}
+
+.trabajemos-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+ }
 
 .formulario{
     margin: 0px 10px;
 }
 
 .boton{
-background: #2388CC;
-color: white;
-border-style: solid;
-padding: 5px 0;
-border-radius: 5px;
-width: 50px;
+    background: #2388CC;
+    color: white;
+    border-style: solid;
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 50px;
 }
 
 .correo {
@@ -234,6 +240,7 @@ footer {
     height: 40px;
     text-transform: capitalize;
     align-items: center;
+    grid-area: footer;
 }
 
 footer a {
@@ -242,4 +249,3 @@ footer a {
     text-transform: capitalize;
     font-family: 'Quattrocento Sans', sans-serif;
 }
-
